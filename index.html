@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- The header goes below from the client, additional stylesheets above from the client for the header.-->
+    <title>Work Day Scheduler</title>
+  </head>
+    <body>
+      <header class= "jumbotron">
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+
+      </header>
+      <!-- This wrapper helps format the page through CSS-->
+      <div class= "wrapper">
+        <div id="cal-wrap">
+
+          <div id="cal-date">
+            <p><select id="cal-mth"></select>
+              <select id="cal-yr"></select>
+              <div class="today-timestamp"><p>&nbsp;&nbsp;&nbsp;&nbsp;Today:&nbsp;</p></div><div id= "calendar-todays-date"></div>
+            </p>
+          </div>
+          <!--This is where the calendar goes.-->
+          <div id="cal-container"></div>
+
+          </form>
+          <br />
+          <!--This is the event box form-->
+          <p class = "click-for-event">Click the calendar to schedule a time block and a event.</p>
+          <form id="cal-event">
+            <h1 id="evt-head"></h1>
+            <div id="evt-date"></div>
+            <p>Enter a time between the time block 9 am - 5 pm.</p>
+            <textarea id="evt-timeblock-details" required></textarea>
+            <p>Enter in the event you would like to schedule.</p>
+            <textarea id="evt-details" required></textarea>
+            <input id="evt-close" type="button" value="Close"/>
+            <input id="evt-del" type="button" value="Delete"/>
+            <input id="evt-save" type="submit" value="Save"/>
+          </form>
+        <br />
+        <br />
+        </div>
+        <!-- These connect jquery api and moment.js api to the site.-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script async src="script.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    </body>
+  </div>
+</html>
+
