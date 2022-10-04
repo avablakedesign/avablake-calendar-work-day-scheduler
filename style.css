@@ -1,3 +1,4 @@
+/* This changes the jumbotron from the client to fit mobile devices */
 .jumbotron .display-3 {
   display: flex;
   justify-content: center;
@@ -16,6 +17,7 @@
   border-radius: 0;
 }
 
+/* This wrapper helps align the calendar scheduler with the jumbotron. This also helps the project to work on mobile devices.*/
 .wrapper {
   display: flex;
   font-family: 'Open Sans', sans-serif;
@@ -37,6 +39,7 @@
 #cal-wrap *{
   font-family: "Open Sans", Tahoma,  Helvetica, Arial, sans-serif;
 }
+/* This hides an element if needed */
 .ninja { display: none !important; }
 
 #cal-wrap {
@@ -60,6 +63,7 @@
   border-collapse: collapse;
 }
 
+/* This changes the calendar head and sets its color. */ 
 #calendar tr.head td {
   font-weight: bold;
   text-transform: uppercase;
@@ -75,7 +79,7 @@
   padding: 15px 5px;
   vertical-align: top;
 }
-
+/* This changes the color of the calendar on hovering over it with the mouse. */
 #calendar tr.day td:hover {
   background: #e5b7ff;
   cursor: pointer;
@@ -85,22 +89,25 @@
   background: #f5f5f5;
 }
 
+/* This changes the past events to a color */
 .event.past {
   background: #C0D8EC;
 }
 
+/* This changes the future events to a color */
 .event.future {
   background: #f55959;
 }
 
+/* This changes all past days to grey by default */
 .past {
   background: lightgray;
 }
-
+/* This adds a now tag. */
 .now {
   background: #ffa8ff
 }
-
+/* This changes an event that's today to a color. */
 .event.now {
   background: rgb(255,255,177);
 }
@@ -139,7 +146,7 @@
   color: #555;
   margin: 10px 0;
 }
-
+/* This changes the event box textarea */
 #cal-event textarea {
   display: block;
   box-sizing: border-box;
@@ -159,6 +166,7 @@
   color: #fff;
 }
 
+/* These allow the calendar scheduler to resize based on the device. */
 @media screen and (max-width: 500px) {
   #cal-wrap {
     transform: scale(0.925)
