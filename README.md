@@ -1,4 +1,4 @@
-#Refactoring a calendar work day scheduler
+## Refactoring a calendar work day scheduler.
 ## Description
 This is a calendar scheduler I programmed for a client.
 ## Installaiton
